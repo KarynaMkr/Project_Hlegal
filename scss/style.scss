@@ -1,0 +1,31 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@import "./normalize";
+@import "./fonts";
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Roboto Condensed';
+}
+
+.wrapper {
+  width: 315px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-next {
+  @include font ($mainFontWeight, 14px, 17px, #24A3FF);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,19 @@
+@mixin font ($fw, $fs, $lh, $col) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $col;
+}
+
+@mixin imgSize ($wdt, $hgt) {
+  width: $wdt;
+  height: $hgt;
+}
+
+@mixin beforeAfter ($url) {
+  content: "";
+  background-image: url("#{$url}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
