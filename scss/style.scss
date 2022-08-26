@@ -1,101 +1,20 @@
-@use "./variables" as *;
-@use "./mixins" as *;
+@use "./basic/variables" as *;
+@use "./basic/mixins" as *;
 
 @import "./normalize";
 @import "./fonts";
+@import "./basic/settings";
+
+@import "./_blocks/sections";
+@import "./_blocks/link-next";
+@import "./_blocks/titles";
+@import "./_blocks/card-list";
 @import "./_blocks/partner-section";
 
-* {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-}
+@import "./_media/tablet-768";
+@import "./_media/tablet-1024";
+@import "./_media/desktop-1440";
+@import "./_media/desctop-1920";
 
-body {
-  font-family: 'Montserrat';
-  min-width: 375px;
-  overflow: auto;
-}
 
-.wrapper {
-  width: 315px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-a {
-  text-decoration: none;
-}
-
-.background {
-  position: relative;
-  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-  border-radius: 0px 0px 12px 12px;
-  background-size: cover;
-}
-
-// .background::after {
-//   content: '';
-//   position: absolute;
-//   left: 20px;
-//   right: 20px;
-//   bottom: -10px;
-//   height: 10px;
-//   background: #CACADB;
-//   border-radius: 0px 0px 12px 12px;
-// }
-
-.services {
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-.link-next {
-  @include font ($mainFontWeight, 14px, 17px, $subTitleColor);
-  display: inline-block;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.link-next--indent {
-  margin-bottom: 10px;
-}
-
-.link-next::after {
-  @include beforeAfter ('../images/arrow-r.svg');
-  @include imgSize (5px, 9px);
-  display: inline-block;
-  margin-left: 5px;
-}
-
-.main_title {
-  @include font ($mainFontWeight, 30px, 37px, $titleColor);
-}
-
-.card-list {
-  margin-top: 30px;
-}
-
-.card-item {
-  margin-bottom: 30px;
-
-  .card-item-img {
-    display: inline-block;
-    width: 92px;
-    height: 92px;
-    background: #FFFFFF;
-    border-radius: 24px;
-    padding: 14px;
-    margin-bottom: 30px;
-  }
-
-  .card-item-title {
-    @include font ($mainFontWeight, 22px, 27px, $subTitleColor);
-    margin-bottom: 15px;
-  }
-
-  .card-item-text {
-    @include font ($secondFontWeight, 16px, 26px, #FFFFFF);
-  }
-}

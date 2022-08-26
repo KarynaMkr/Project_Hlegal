@@ -321,80 +321,6 @@ template {
   font-style: normal;
   font-display: swap;
 }
-.partner-section {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.partner-section a {
-  display: inline-block;
-  width: 100%;
-  font-size: 0px;
-  text-align: center;
-}
-.partner-section .desctop-show {
-  display: none;
-}
-
-.back-hillel {
-  background-color: #1C4280;
-  padding: 36px 0;
-}
-
-.back-wannabiz {
-  background-color: #143646;
-  padding: 44px 0;
-}
-
-.back-tapgerine {
-  background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
-  padding: 38px 0;
-}
-
-.back-3dlook {
-  background-color: #9E4DC3;
-  padding: 39px 0;
-}
-
-.back-orangear {
-  background-color: #FD9339;
-  padding: 38px 0;
-}
-
-.back-adtelligent {
-  background-color: #E2E2E4;
-  padding: 36px 0;
-}
-
-.back-clikky {
-  background-color: #C71C36;
-  padding: 29.5px 0;
-}
-
-.back-ecoleasing {
-  background-color: #DCF3F9;
-  padding: 22px 0;
-}
-
-.back-infratek {
-  background-color: #EAEAEA;
-  padding: 30px 0;
-}
-
-.back-citypark {
-  background-color: #282240;
-  padding: 41px 0;
-}
-
-.back-artprint {
-  background-color: #1D4568;
-  padding: 37px 0;
-}
-
-.back-ultimate {
-  background-color: #000000;
-  padding: 12.5px 0;
-}
-
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -491,4 +417,139 @@ a {
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+}
+
+.partner-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.partner-section a {
+  display: inline-block;
+  width: 100%;
+  font-size: 0px;
+  text-align: center;
+}
+.partner-section .desctop-show {
+  display: none;
+}
+
+.back-hillel {
+  background-color: #1C4280;
+  padding: 36px 0;
+}
+
+.back-wannabiz {
+  background-color: #143646;
+  padding: 44px 0;
+}
+
+.back-tapgerine {
+  background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+  padding: 38px 0;
+}
+
+.back-3dlook {
+  background-color: #9E4DC3;
+  padding: 39px 0;
+}
+
+.back-orangear {
+  background-color: #FD9339;
+  padding: 38px 0;
+}
+
+.back-adtelligent {
+  background-color: #E2E2E4;
+  padding: 36px 0;
+}
+
+.back-clikky {
+  background-color: #C71C36;
+  padding: 29.5px 0;
+}
+
+.back-ecoleasing {
+  background-color: #DCF3F9;
+  padding: 22px 0;
+}
+
+.back-infratek {
+  background-color: #EAEAEA;
+  padding: 30px 0;
+}
+
+.back-citypark {
+  background-color: #282240;
+  padding: 41px 0;
+}
+
+.back-artprint {
+  background-color: #1D4568;
+  padding: 37px 0;
+}
+
+.back-ultimate {
+  background-color: #000000;
+  padding: 12.5px 0;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 648px;
+  }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 60px;
+  }
+  .card-item {
+    width: 294px;
+    margin-bottom: 0px;
+  }
+  .main_title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .partner-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .partner-section a {
+    width: 33.3%;
+  }
+  .partner-section .desctop-show {
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 904px;
+  }
+  .card-item {
+    width: 261px;
+  }
+  .partner-section a {
+    width: 25%;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1320px;
+  }
+  .card-item {
+    width: 400px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1600px;
+  }
+  .card-item {
+    width: 493px;
+  }
+  .link-next:hover {
+    color: #F0145A;
+  }
 }

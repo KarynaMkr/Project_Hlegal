@@ -1,0 +1,17 @@
+.link-next {
+  @include font ($mainFontWeight, 14px, 17px, $subTitleColor);
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.link-next--indent {
+  margin-bottom: 10px;
+}
+
+.link-next::after {
+  @include beforeAfter ('../images/arrow-r.svg');
+  @include imgSize (5px, 9px);
+  display: inline-block;
+  margin-left: 5px;
+}

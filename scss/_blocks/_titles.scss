@@ -1,0 +1,3 @@
+.main_title {
+  @include font ($mainFontWeight, 30px, 37px, $titleColor);
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Montserrat';
+  min-width: 375px;
+  overflow: auto;
+}
+
+.wrapper {
+  width: 315px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+}
