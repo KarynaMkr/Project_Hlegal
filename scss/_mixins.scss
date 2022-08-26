@@ -11,7 +11,7 @@
 }
 
 @mixin beforeAfter ($url) {
-  content: "";
+  content: '';
   background-image: url("#{$url}");
   background-repeat: no-repeat;
   background-position: center;
