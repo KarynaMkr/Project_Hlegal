@@ -386,7 +386,7 @@ a {
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
-  color: #F01C5D;
+  color: #F0145A;
 }
 
 .card-list {
@@ -453,5 +453,16 @@ a {
   }
   .card-item {
     width: 400px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1600px;
+  }
+  .card-item {
+    width: 493px;
+  }
+  .link-next:hover {
+    color: #F0145A;
   }
 }

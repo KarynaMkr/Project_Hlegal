@@ -51,7 +51,7 @@ a {
 }
 
 .link-next {
-  @include font ($mainFontWeight, 14px, 17px, #24A3FF);
+  @include font ($mainFontWeight, 14px, 17px, $subTitleColor);
   display: inline-block;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -69,7 +69,7 @@ a {
 }
 
 .main_title {
-  @include font ($mainFontWeight, 30px, 37px, #F01C5D);
+  @include font ($mainFontWeight, 30px, 37px, $titleColor);
 }
 
 .card-list {
@@ -90,7 +90,7 @@ a {
   }
 
   .card-item-title {
-    @include font ($mainFontWeight, 22px, 27px, #24A3FF);
+    @include font ($mainFontWeight, 22px, 27px, $subTitleColor);
     margin-bottom: 15px;
   }
 
@@ -143,5 +143,17 @@ a {
   }
 }
 
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1600px;
+  }
 
+  .card-item {
+    width: 493px;
+  }
+
+  .link-next:hover {
+    color: $titleColor;
+  }
+}
 
