@@ -10,4 +10,29 @@
   .link-next:hover {
     color: $titleColor;
   }
+
+  .partner-section {
+    padding: 0 100px;
+    text-align: center;
+
+    a {
+      width: 25%;
+    }
+  }
+
+  .back-hillel {
+    border-radius: 12px 0 0 0;
+  }
+
+  .back-3dlook {
+    border-radius: 0 12px 0 0;
+  }
+
+  .back-infratek {
+    border-radius: 0 0 0 12px;
+  }
+
+  .back-ultimate {
+    border-radius: 0 0 12px 0;
+  }
 }
