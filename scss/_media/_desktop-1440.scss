@@ -2,4 +2,9 @@
   .card-item {
     width: calc(33.33% - 40px);
   }
+
+  .slider_page-bg {
+    @include imgSize (400px, auto);
+    background-size: contain;
+  }
 }

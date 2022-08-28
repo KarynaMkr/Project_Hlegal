@@ -15,8 +15,7 @@
 
 .slider_page-bg {
   @include bgImage (#F5F5FA, '../images/portret.svg');
-  width: 100%;
-  height: 500px;
+  @include imgSize (100%, 500px);
   border-radius: 12px 12px 0px 0px;
 }
 

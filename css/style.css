@@ -600,10 +600,26 @@ a {
   .partner-section a {
     width: 25%;
   }
+  .slider_page {
+    flex-wrap: nowrap;
+  }
+  .slider_page-bg {
+    width: 40%;
+    height: 512px;
+    border-radius: 12px 0px 0px 12px;
+  }
+  .slider_page-content {
+    width: 60%;
+  }
 }
 @media (min-width: 1440px) {
   .card-item {
     width: calc(33.33% - 40px);
+  }
+  .slider_page-bg {
+    width: 400px;
+    height: auto;
+    background-size: contain;
   }
 }
 @media (min-width: 1920px) {
