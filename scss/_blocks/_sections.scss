@@ -5,16 +5,27 @@
   background-size: cover;
 }
 
-// .background::after {
-//   content: '';
-//   position: absolute;
-//   left: 20px;
-//   right: 20px;
-//   bottom: -10px;
-//   height: 10px;
-//   background: #CACADB;
-//   border-radius: 0px 0px 12px 12px;
-// }
+.background::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
+  height: 10px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+}
 
 .services {
   display: inline-block;

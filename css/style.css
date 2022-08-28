@@ -348,6 +348,28 @@ a {
   background-size: cover;
 }
 
+.background::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
+  height: 10px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+}
+
 .services {
   display: inline-block;
   margin-top: 30px;
@@ -543,6 +565,18 @@ a {
   }
   .link-next:hover {
     color: #F0145A;
+  }
+  .link-next:hover.link-next::after {
+    display: none;
+    content: "";
+    background-image: url("../images/arrow-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 5px;
+    height: 9px;
+    display: inline-block;
+    margin-left: 5px;
   }
   .partner-section {
     padding: 0 100px;

@@ -7,6 +7,14 @@
     color: $titleColor;
   }
 
+  .link-next:hover.link-next::after {
+    display: none;
+    @include beforeAfter ('../images/arrow-hover.svg');
+    @include imgSize (5px, 9px);
+    display: inline-block;
+    margin-left: 5px;
+  }
+
   .partner-section {
     padding: 0 100px;
     text-align: center;
