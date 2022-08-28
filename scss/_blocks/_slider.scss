@@ -1,0 +1,36 @@
+.slider {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.slider_page {
+  background-color: #F5F5FA;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider_page-content {
+  padding: 30px;
+}
+
+.slider_page-bg {
+  @include bgImage (#F5F5FA, '../images/portret.svg');
+  width: 100%;
+  height: 500px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.slider_page--people {
+  margin-top: 30px;
+
+  .name {
+    @include font (700, 16px, 20px, #B3B3BA);
+    margin-bottom: 6px;
+  }
+
+  .status {
+    @include font (400, 14px, 22px, #B3B3BA);
+  }
+}
+
+

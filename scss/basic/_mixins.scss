@@ -17,3 +17,11 @@
   background-position: center;
   background-size: cover;
 }
+
+@mixin bgImage ($bgColor, $url) {
+  background-color: $bgColor;
+  background-image: url("#{$url}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
