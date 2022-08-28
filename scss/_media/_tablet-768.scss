@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   .wrapper {
-    width: 648px;
+    padding: 0 60px;
   }
 
   .card-list {
@@ -12,7 +12,7 @@
   }
 
   .card-item {
-    width: 294px;
+    width: calc(50% - 30px);
     margin-bottom: 0px;
   }
 
@@ -26,7 +26,7 @@
     flex-wrap: wrap;
     
     a {
-      width: 33.3%;
+      width: 33.33%;
     }
 
     .desctop-show {

@@ -334,9 +334,7 @@ body {
 }
 
 .wrapper {
-  width: 315px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 30px;
 }
 
 a {
@@ -495,7 +493,7 @@ a {
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 648px;
+    padding: 0 60px;
   }
   .card-list {
     display: flex;
@@ -505,7 +503,7 @@ a {
     margin-top: 60px;
   }
   .card-item {
-    width: 294px;
+    width: calc(50% - 30px);
     margin-bottom: 0px;
   }
   .main_title {
@@ -517,7 +515,7 @@ a {
     flex-wrap: wrap;
   }
   .partner-section a {
-    width: 33.3%;
+    width: 33.33%;
   }
   .partner-section .desctop-show {
     display: inline-block;
@@ -525,29 +523,23 @@ a {
 }
 @media (min-width: 1024px) {
   .wrapper {
-    width: 904px;
+    padding: 0 60px;
   }
   .card-item {
-    width: 261px;
+    width: calc(33.33% - 40px);
   }
   .partner-section a {
     width: 25%;
   }
 }
 @media (min-width: 1440px) {
-  .wrapper {
-    width: 1320px;
-  }
   .card-item {
-    width: 400px;
+    width: calc(33.33% - 40px);
   }
 }
 @media (min-width: 1920px) {
   .wrapper {
-    width: 1600px;
-  }
-  .card-item {
-    width: 493px;
+    padding: 0 160px;
   }
   .link-next:hover {
     color: #F0145A;
@@ -559,16 +551,16 @@ a {
   .partner-section a {
     width: 25%;
   }
-  .back-hillel {
+  .top-left-rounding {
     border-radius: 12px 0 0 0;
   }
-  .back-3dlook {
+  .top-right-rounding {
     border-radius: 0 12px 0 0;
   }
-  .back-infratek {
+  .bottom-left-rounding {
     border-radius: 0 0 0 12px;
   }
-  .back-ultimate {
+  .bottom-right-rounding {
     border-radius: 0 0 12px 0;
   }
 }

@@ -1,10 +1,6 @@
 @media (min-width: 1920px) {
   .wrapper {
-    width: 1600px;
-  }
-
-  .card-item {
-    width: 493px;
+    padding: 0 160px;
   }
 
   .link-next:hover {
@@ -20,19 +16,19 @@
     }
   }
 
-  .back-hillel {
+  .top-left-rounding {
     border-radius: 12px 0 0 0;
   }
 
-  .back-3dlook {
+  .top-right-rounding {
     border-radius: 0 12px 0 0;
   }
 
-  .back-infratek {
+  .bottom-left-rounding {
     border-radius: 0 0 0 12px;
   }
 
-  .back-ultimate {
+  .bottom-right-rounding {
     border-radius: 0 0 12px 0;
   }
 }
