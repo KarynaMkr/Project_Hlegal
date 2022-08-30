@@ -1,7 +1,6 @@
 .main_title {
   @include font ($mainFontWeight, 30px, 37px, $titleColor);
   color: transparent;    
-	background-clip: text;
   -webkit-background-clip: text;
 	background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);;
 }
