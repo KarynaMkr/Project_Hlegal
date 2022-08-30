@@ -21,7 +21,7 @@
     line-height: 46px;
   }
 
-  .partner-section {
+  .partners {
     display: flex;
     flex-wrap: wrap;
     
@@ -31,6 +31,16 @@
 
     .desctop-show {
       display: inline-block;
+    }
+  }
+
+  .slider {
+    padding-top: 80px;
+  }
+
+  .slider_page--people {
+    .name br {
+      display: none;
     }
   }
 }

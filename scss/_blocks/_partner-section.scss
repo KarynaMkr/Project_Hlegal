@@ -1,12 +1,19 @@
 .partner-section {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  text-align: center;
 
+  .title {
+  @include font (700, 14px, 17px, #323264);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+}
+
+.partners {
   a {
     display: inline-block;
     width: 100%;
     font-size: 0px;
-    text-align: center;
   }
 
   .desctop-show {

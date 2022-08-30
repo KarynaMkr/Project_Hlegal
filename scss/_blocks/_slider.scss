@@ -1,22 +1,32 @@
 .slider {
   padding-top: 50px;
   padding-bottom: 60px;
+
+  .wrapper {
+    max-width: 2000px;  
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .slider_page {
-  background-color: #F5F5FA;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 12px;
+  background-color: #F5F5FA;
 }
 
 .slider_page-content {
+  display: inline-block;
   padding: 30px;
 }
 
 .slider_page-bg {
+  display: flex;
   @include bgImage (#F5F5FA, '../images/portret.svg');
   @include imgSize (100%, 500px);
   border-radius: 12px 12px 0px 0px;
+  flex: 0 0 auto;
 }
 
 .slider_page--people {
@@ -30,6 +40,38 @@
   .status {
     @include font (400, 14px, 22px, #B3B3BA);
   }
+}
+
+@media (min-width: 400px) {
+  .word-wrap-br {
+    display: none;
+  }
+}
+
+.slider-switch {
+  font-size: 0px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.switcher {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #24A3FF;
+  opacity: 0.2;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.slider-switch:last-child {
+  margin-right: 0px;
+}
+
+.switcher:checked {
+  opacity: 1;
 }
 
 
