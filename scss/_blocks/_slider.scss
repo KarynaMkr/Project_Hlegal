@@ -49,11 +49,12 @@
 }
 
 .slider-switch {
+  margin: 0px;
   font-size: 0px;
   margin-top: 30px;
   text-align: center;
 }
-
+  
 .switcher {
   display: inline-block;
   width: 16px;
@@ -66,7 +67,7 @@
   appearance: none;
 }
 
-.slider-switch:last-child {
+.slider-switch .switcher:last-child {
   margin-right: 0px;
 }
 

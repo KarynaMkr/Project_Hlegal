@@ -43,5 +43,19 @@
       display: none;
     }
   }
+
+  .publications-cards {
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+  .publications-cards .card:last-child {
+    width: 100%;
+  }
 }
 

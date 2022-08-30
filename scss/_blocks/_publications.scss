@@ -2,3 +2,61 @@
   background-color: #F5F5FA;
   padding: 30px 0;
 }
+
+.publications-cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 0px;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.card-content {
+  padding: 30px;
+
+  .title {
+    @include font (700, 16px, 20px, #24A3FF);
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .data {
+    @include font (700, 12px, 15px, #B3B3BA);
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #E6E6F0;
+    width: 100%;
+  }
+
+  .text {
+    @include font (400, 14px, 22px, #000000);
+  }
+}
+
+.card-bg {
+  @include imgSize (100%, 200px);
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.equity-img {
+  background-image: url("../images/publications/equity-associate.svg");
+}
+
+.gdpr-img {
+  background-image: url('../images/publications/gdpr.svg');
+}
+

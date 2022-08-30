@@ -21,4 +21,12 @@
     width: 400px;
     border-radius: 12px 0px 0px 12px;
   }
+
+  .publications-cards {
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    width: 33.33%;
+  }
 }
