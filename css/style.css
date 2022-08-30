@@ -679,6 +679,10 @@ a {
   background-image: url("../images/publications/gdpr.svg");
 }
 
+.millennial-img {
+  background-image: url("../images/publications/millennial.png");
+}
+
 @media (min-width: 768px) {
   .wrapper {
     padding: 0 60px;
