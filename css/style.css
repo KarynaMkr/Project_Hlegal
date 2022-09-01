@@ -341,6 +341,65 @@ a {
   text-decoration: none;
 }
 
+.main-screen {
+  width: auto;
+  height: 100vh;
+  background-color: none;
+  background-image: url("../images/main-screen/main-screen-symb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.slogan {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-align: center;
+  min-width: 315px;
+  max-width: 800px;
+}
+
+.btn-down {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transrapent-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  opacity: 0.5;
+  border: 2px solid #FFFFFF;
+}
+
+.btn-down-img {
+  position: absolute;
+  width: 20px;
+  height: 18px;
+}
+
+.paragraphs {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.paragraph-links {
+  display: flex;
+  overflow-x: auto;
+}
+
 .background {
   position: relative;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
@@ -372,7 +431,6 @@ a {
 
 .services {
   display: inline-block;
-  margin-top: 30px;
   margin-bottom: 60px;
 }
 
@@ -723,6 +781,9 @@ a {
   }
   .card {
     width: calc(50% - 15px);
+  }
+  .main-screen .wrapper {
+    padding: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
