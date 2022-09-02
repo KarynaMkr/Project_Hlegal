@@ -328,7 +328,7 @@ template {
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   min-width: 375px;
   overflow: auto;
 }
@@ -389,15 +389,67 @@ a {
   height: 18px;
 }
 
+.paragraph-section .wrapper {
+  padding: 0px;
+}
+
 .paragraphs {
   padding: 30px 0;
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .paragraph-links {
   display: flex;
   overflow-x: auto;
+  padding-left: 30px;
+}
+
+.paragraph-links::-webkit-scrollbar {
+  width: 0;
+}
+
+.par-link {
+  margin-right: 30px;
+  white-space: nowrap;
+}
+
+.par-link:last-child {
+  margin-right: 0px;
+}
+
+.par-link.not-active {
+  color: #B3B3BA;
+}
+
+.line {
+  padding: 30px;
+}
+
+.line::after {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+.paragraph-article {
+  padding: 0 30px;
+}
+.paragraph-article h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.paragraph-article p {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #FFFFFF;
 }
 
 .background {
@@ -785,6 +837,19 @@ a {
   .main-screen .wrapper {
     padding: 0;
   }
+  .line {
+    padding: 60px;
+  }
+  .paragraph-links {
+    padding-left: 60px;
+  }
+  .paragraph-article {
+    padding: 0 60px;
+  }
+  .paragraph-article h3 {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .publications-cards .card:last-child {
@@ -806,6 +871,7 @@ a {
   }
   .slider_page-bg {
     width: 400px;
+    height: auto;
     border-radius: 12px 0px 0px 12px;
   }
   .publications .link-next--indent {
@@ -817,6 +883,40 @@ a {
   .card {
     width: 33.33%;
   }
+  .main-screen {
+    background-size: contain;
+  }
+  .paragraph-section .wrapper {
+    padding: 0 60px;
+  }
+  .paragraphs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 60px;
+  }
+  .paragraphs .paragraph-links {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 375px;
+    overflow-x: hidden;
+    flex-shrink: 0;
+    justify-content: flex-end;
+  }
+  .paragraphs .paragraph-links .par-link {
+    margin: 0px;
+  }
+  .paragraphs .paragraph-article {
+    padding: 0;
+    margin: 0;
+  }
+  .paragraphs .line {
+    padding: 0px;
+  }
+  .paragraphs .line::after {
+    width: 4px;
+    height: 300px;
+  }
 }
 @media (min-width: 1440px) {
   .card-item {
@@ -826,6 +926,9 @@ a {
     width: 400px;
     height: auto;
     background-size: cover;
+  }
+  .paragraph-section .wrapper {
+    padding: 0 180px;
   }
 }
 @media (min-width: 1920px) {
@@ -865,5 +968,11 @@ a {
   }
   .bottom-right-rounding {
     border-radius: 0 0 12px 0;
+  }
+  .paragraph-section .wrapper {
+    padding: 0 280px;
+  }
+  .par-link:hover {
+    color: #F0145A;
   }
 }

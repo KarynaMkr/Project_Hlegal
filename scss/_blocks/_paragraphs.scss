@@ -1,11 +1,58 @@
+.paragraph-section .wrapper{
+  padding: 0px;
+}
+
 .paragraphs {
   padding: 30px 0;
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .paragraph-links {
   display: flex;
   overflow-x: auto;
+  padding-left: 30px;
+}
 
+.paragraph-links::-webkit-scrollbar {
+  width: 0;
+}
+
+.par-link {
+  margin-right: 30px;
+  white-space: nowrap
+}
+
+.par-link:last-child {
+  margin-right: 0px;
+}
+
+.par-link.not-active {
+  color: #B3B3BA;
+}
+
+.line {
+  padding: 30px;
+}
+
+.line::after {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+.paragraph-article {
+  padding: 0 30px;
+
+  h3 {
+    @include font (700, 20px, 24px, #FFFFFF);
+    margin-bottom: 30px;
+  }
+
+  p {
+    @include font (400, 19px, 30px, #FFFFFF);
+  }
 }

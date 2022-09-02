@@ -7,4 +7,8 @@
     @include imgSize (400px, auto);
     background-size: cover;
   }
+
+  .paragraph-section .wrapper {
+    padding: 0 180px;
+  }
 }
